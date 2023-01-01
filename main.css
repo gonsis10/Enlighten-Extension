@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Inter&display=swap");
 
 :root {
   --c1: rgb(68, 255, 209);
@@ -12,9 +12,9 @@
 
 body {
   height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  background-image: url('https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80');
+  background-image: url("https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main {
@@ -49,6 +49,29 @@ footer {
 
 footer > * {
   padding: 1.5em;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  right: -450px;
+  height: 100vh;
+  min-width: 333px;
+  width: 408px;
+  padding: 0 21px;
+  visibility: hidden;
+  background-color: #f2f2f7;
+  color: #222;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: none;
+  text-align: left;
+  touch-action: pan-y;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* transform: translateX(-100%); */
 }
 
 #clock {
