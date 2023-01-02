@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Enlighten",
+  "description": "Be enlightened everyday.",
+  "version": "1.0",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "main.html"
+  },
+  "oauth2": {
+    "client_id": "1024550225141-dvbkogbsnsh1s6efp200pmuid39trn27.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/calendar"]
+  },
+  "permissions": ["identity", "geolocation"]
+}

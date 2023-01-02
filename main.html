@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
     <script src="main.js" async></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <title>Document</title>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <title>eTab</title>
   </head>
   <body>
     <main id="interface" class="center stack">
@@ -17,9 +16,10 @@
         <h2 id="date">Sunday, December 25</h2>
       </div>
       <div id="info" class="center stack">
-        <h3 id="greet">Good Afternoon</h3>
-        <div id="weather" class="center">
-          <h4 id="current">Overcast clouds. It is currently 4°</h4>
+        <h2 id="greet">Good Afternoon, Joe</h2>
+        <div id="weather" class="center stack">
+          <h3 id="current">Overcast clouds. It is currently 4</h3>
+          <img id="weatherIcon" src="assets/weather/03b.svg" draggable="false" />
         </div>
       </div>
       <div id="quote" class="center stack">
@@ -33,12 +33,12 @@
         <a href="https://unsplash.com/@diegojimenez" class="author">Diego Jimenez</a>
       </div>
       <div id="showSettings">
-        <button>
-          <img src="assets/gear.svg" draggable="false" />
+        <button id="toggleSettings">
+          <img id="gearImage" src="assets/gear.svg" draggable="false" />
         </button>
       </div>
     </footer>
-    <aside>
+    <aside id="settings">
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, asperiores.</p>
     </aside>
   </body>
