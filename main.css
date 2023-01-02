@@ -50,12 +50,12 @@ main > * {
 }
 
 #clock {
-  font-size: 6rem;
+  font-size: 10.3336921421vh;
   font-weight: 600;
 }
 
 #date {
-  font-size: 2rem;
+  font-size: 3.44456404736vh;
   font-weight: 600;
 }
 
@@ -64,22 +64,22 @@ main > * {
 }
 
 #greet {
-  font-size: 1.5rem;
+  font-size: 2.58342303552vh;
   font-weight: normal;
 }
 
 #current {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.72228202368vh;
   font-weight: normal;
 }
 
 #weatherIcon {
   filter: invert(1);
-  /* margin: -10px; */
+  margin-bottom: -20px;
   padding: 0;
-  height: 100px;
-  width: 100px;
+  height: 10.764262648vh;
+  width: 10.764262648vh;
 }
 
 .box {
@@ -120,12 +120,12 @@ main > * {
 }
 
 #quote #content {
-  font-size: 1.5rem;
+  font-size: 2.58342303552vh;
   text-align: center;
 }
 
 #quote #author {
-  font-size: 1rem;
+  font-size: 1.72228202368vh;
   font-style: italic;
 }
 
@@ -142,15 +142,15 @@ footer {
 }
 
 footer > * {
-  padding: 1.5rem;
+  padding: 2.58342303552vh;
 }
 
 .credit {
-  padding: 1rem;
+  padding: 1.72228202368vh;
 }
 
 .author {
-  font-size: 14px;
+  font-size: 1.50699677072vh;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -175,8 +175,8 @@ footer > * {
 #showSettings button img {
   margin: 0;
   padding: 0;
-  height: 24px;
-  width: 24px;
+  height: 2.58342303552vh;
+  width: 2.58342303552vh;
   transition: transform 0.6s;
 }
 
