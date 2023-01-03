@@ -46,6 +46,7 @@ async function setWeather(pos) {
 
   const exceptions = ['03', '04', '13', '50'];
   let icon = data.weather[0].icon;
+  console.log(icon);
   if (exceptions.includes(icon.slice(0, 2))) {
     icon = icon.slice(0, 2);
   }
@@ -68,7 +69,7 @@ async function setQuote() {
 window.onload = () => {
   setTime();
   getLocation();
-  // setQuote();
+  setQuote();
 };
 setInterval(setTime, 1000);
 
