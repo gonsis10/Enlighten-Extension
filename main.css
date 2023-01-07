@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Inter&display=swap');
 
+::root {
+}
 /* General Style */
 body {
   height: 100vh;
@@ -12,7 +14,7 @@ body {
   backdrop-filter: blur(10px);
   margin: 0;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   overflow: hidden;
 }
 
@@ -29,6 +31,12 @@ body {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 10px 10px transparent;
   border: solid 3px transparent;
+}
+
+hr {
+  border: 2px rgba(255, 255, 255, 0.15) solid;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* Main Area */
@@ -83,13 +91,12 @@ main > * {
 }
 
 .box {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(201, 201, 201, 0.1);
   color: rgb(255, 255, 255);
-  padding: 2px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: transparent;
   border-radius: 10px;
   padding: 10px;
-  width: 33.33%;
+  width: auto;
 }
 /* 
 .date {
@@ -106,13 +113,9 @@ main > * {
   height: 100%;
 } */
 
-.box * + * {
-  margin-top: 10px;
-}
-
 #quote {
   font-family: 'Domne', serif;
-  width: 33.33%;
+  /* width: 33.33%; */
 }
 
 #quote > * {
@@ -157,6 +160,33 @@ footer > * {
 
 .author:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+
+#calendar {
+  background-color: rgba(201, 201, 201, 0.1);
+  color: rgb(255, 255, 255);
+  border: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  height: 50%;
+}
+
+#calendar > * {
+  font-weight: normal;
+  margin: 0;
+}
+
+#schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#schedule > * {
+  height: auto;
+  /* height: 100%; */
 }
 
 #showSettings button {
@@ -233,4 +263,12 @@ footer > * {
   display: flex;
   flex-direction: column;
   /* justify-content: stretch; */
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }

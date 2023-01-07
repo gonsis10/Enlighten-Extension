@@ -10,23 +10,35 @@
     <title>eTab</title>
   </head>
   <body>
-    <main id="interface" class="center stack">
-      <div id="time" class="center stack">
-        <h1 id="clock">11:25</h1>
-        <h2 id="date">Sunday, December 25</h2>
-      </div>
-      <div id="info" class="center stack">
-        <h2 id="greet">Good Afternoon, Joe</h2>
-        <div id="weather" class="center stack">
-          <h3 id="current">Overcast clouds. It is currently 4</h3>
-          <img id="weatherIcon" src="assets/weather/03.svg" draggable="false" />
+    <div class="column center stack">
+      <div id="calendar">
+        <div id="day-info">
+          <h2 id="day">Today</h2>
+          <hr />
         </div>
+        <div id="schedule" class="stack"></div>
       </div>
-      <div id="quote" class="center stack">
-        <p id="content">"The three great essentials to achieve anything worthwhile are: Hard work, Stick-to-itiveness, and Common sense."</p>
-        <p id="author">––– Thomas Edison</p>
-      </div>
-    </main>
+    </div>
+    <div class="column">
+      <main id="interface" class="center stack">
+        <div id="time" class="center stack">
+          <h1 id="clock">11:25</h1>
+          <h2 id="date">Sunday, December 25</h2>
+        </div>
+        <div id="info" class="center stack">
+          <h2 id="greet">Good Afternoon, Joe</h2>
+          <div id="weather" class="center stack">
+            <h3 id="current">Overcast clouds. It is currently 4</h3>
+            <img id="weatherIcon" src="assets/weather/03.svg" draggable="false" />
+          </div>
+        </div>
+        <div id="quote" class="center stack">
+          <p id="content">"The three great essentials to achieve anything worthwhile are: Hard work, Stick-to-itiveness, and Common sense."</p>
+          <p id="author">––– Thomas Edison</p>
+        </div>
+      </main>
+    </div>
+    <div class="column"></div>
     <footer>
       <div id="credit">
         <a href="https://unsplash.com/photos/A-NVHPka9Rk" class="author">Photo by</a>

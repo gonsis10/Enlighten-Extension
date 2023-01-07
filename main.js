@@ -57,7 +57,7 @@ async function setWeather(pos) {
 
 async function setQuote() {
   try {
-    const resp = await fetch('https://api.quotable.io/random?tags=wisdom');
+    const resp = await fetch('https://api.quotable.io/random?maxLength=100');
     const data = await resp.json();
     document.getElementById('content').innerHTML = `"${data.content}"`;
     document.getElementById('author').innerHTML = `––– ${data.author}`;
@@ -66,29 +66,32 @@ async function setQuote() {
   }
 }
 
-window.onload = () => {
+window.onload = async () => {
   setTime();
   getLocation();
   setQuote();
+  setSidebar();
 };
 setInterval(setTime, 1000);
 
 //Setting Sidebar
-let shown = false;
-const showSettings = document.getElementById('showSettings');
-const toggleSettings = document.getElementById('toggleSettings');
-const settings = document.getElementById('settings');
-toggleSettings.addEventListener('click', () => {
-  if (!shown) {
-    showSettings.classList.add('shown');
-    settings.classList.add('shown');
-    shown = true;
-  } else {
-    showSettings.classList.remove('shown');
-    settings.classList.remove('shown');
-    shown = false;
-  }
-});
+async function setSidebar() {
+  let shown = false;
+  const showSettings = document.getElementById('showSettings');
+  const toggleSettings = document.getElementById('toggleSettings');
+  const settings = document.getElementById('settings');
+  toggleSettings.addEventListener('click', () => {
+    if (!shown) {
+      showSettings.classList.add('shown');
+      settings.classList.add('shown');
+      shown = true;
+    } else {
+      showSettings.classList.remove('shown');
+      settings.classList.remove('shown');
+      shown = false;
+    }
+  });
+}
 
 console.log(window.innerHeight);
 console.log(window.innerWidth);
@@ -125,7 +128,9 @@ chrome.identity.getAuthToken({ interactive: true }, async function (token) {
   );
   const data = await resp.json();
   const events = data.items;
+  const colorId = { undefined: '#039be5', 1: '#7986cb', 2: '#33b679', 3: '#8e24aa', 4: '#e67c73', 5: '#f6c026', 6: '#f5511d', 7: '#039be5', 8: '#616161', 9: ' #3f51b5', 10: '#0b8043', 11: '#d60000' };
   events.forEach((event) => {
-    console.log(event.summary);
+    document.getElementById('schedule').innerHTML += `<div id="event" class="box" style="background: ${colorId[parseInt(event.colorId)]}80"><h3>${event.summary}</h3></div>`;
+    console.log(colorId[parseInt(event.colorId)]);
   });
 });
