@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Inter&display=swap");
 
 ::root {
 }
 /* General Style */
 body {
   height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  background-image: url('https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80');
+  background-image: url("https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,9 +34,9 @@ body {
 }
 
 hr {
-  border: 2px rgba(255, 255, 255, 0.15) solid;
+  border: 2px rgba(255, 255, 255) solid;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255);
 }
 
 /* Main Area */
@@ -91,11 +91,11 @@ main > * {
 }
 
 .box {
-  background-color: rgba(201, 201, 201, 0.1);
   color: rgb(255, 255, 255);
   border: transparent;
   border-radius: 10px;
   padding: 10px;
+  margin: 5px;
   width: auto;
 }
 /* 
@@ -114,7 +114,7 @@ main > * {
 } */
 
 #quote {
-  font-family: 'Domne', serif;
+  font-family: "Domne", serif;
   /* width: 33.33%; */
 }
 
@@ -163,24 +163,20 @@ footer > * {
 }
 
 #calendar {
-  background-color: rgba(201, 201, 201, 0.1);
   color: rgb(255, 255, 255);
-  border: transparent;
-  border-radius: 10px;
   padding: 10px;
   width: 90%;
-  height: 50%;
+  height: auto;
 }
 
 #calendar > * {
-  font-weight: normal;
+  /* font-weight: normal; */
   margin: 0;
 }
 
 #schedule {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
