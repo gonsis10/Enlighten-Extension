@@ -73,7 +73,6 @@ function getLocation() {
 
 async function setWeather(pos) {
   const crd = pos.coords;
-  const resp = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=f2a20b7d5d99c4399e3d24634dd76f80`);
   const data = await resp.json();
 
   const desc = data.weather[0].description;
